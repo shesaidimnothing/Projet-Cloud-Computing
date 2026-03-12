@@ -1,3 +1,4 @@
+# Appel à Azure Blob Storage : upload, download, delete, list
 import io
 from azure.storage.blob import BlobServiceClient, ContentSettings
 from flask import current_app

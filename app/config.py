@@ -1,3 +1,4 @@
+# Config : connexion BDD PostgreSQL + Azure Blob Storage (variables d'environnement)
 import os
 
 

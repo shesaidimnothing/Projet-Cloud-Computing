@@ -1,3 +1,4 @@
+# Modèle pour les fichiers : nom, taille, catégorie, date... (stocké en PostgreSQL)
 from datetime import datetime, timezone
 from flask_sqlalchemy import SQLAlchemy
 

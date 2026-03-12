@@ -1,3 +1,6 @@
+# Application Flask - API pour gérer des fichiers (upload, liste, download, delete)
+# Les fichiers sont stockés dans Azure Blob Storage, les infos en base PostgreSQL
+
 from flask import Flask, request, jsonify, Response
 from config import Config
 from models import db, FileRecord
