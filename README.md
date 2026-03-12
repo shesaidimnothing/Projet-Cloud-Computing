@@ -18,7 +18,7 @@ terraform init
 terraform apply
 ```
 
-Régions possibles avec abo étudiant : Norway East, Sweden Central, etc. (voir erreur Azure si ta région est refusée).
+Régions possibles avec abo efrei : Norway East, Sweden Central, etc. (voir erreur Azure si ta région est refusée).
 
 Récupérer l’IP : `terraform output` → tester avec `curl http://<IP>:5000/`
 
