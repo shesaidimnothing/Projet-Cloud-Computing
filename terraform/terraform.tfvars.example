@@ -1,0 +1,21 @@
+# --- Azure ---
+azure_subscription_id = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+location              = "France Central"
+
+# --- Project ---
+project_name = "cloudprojet"
+
+# --- VM ---
+vm_size              = "Standard_B1s"
+admin_username       = "azureuser"
+ssh_public_key_path  = "~/.ssh/id_rsa.pub"
+ssh_private_key_path = "~/.ssh/id_rsa"
+
+# --- PostgreSQL ---
+db_name     = "flaskdb"
+db_username = "flaskadmin"
+db_password = "ChangeMe_Str0ng!Pass"
+
+# --- Storage ---
+# Must be globally unique, lowercase, 3-24 chars, letters+numbers only
+storage_account_name = "cloudprojetstore12345"
