@@ -206,7 +206,7 @@ resource "azurerm_linux_virtual_machine" "web" {
 
   admin_ssh_key {
     username   = var.admin_username
-    public_key = file(var.ssh_public_key_path)
+    public_key = file(pathexpand(var.ssh_public_key_path))
   }
 
   os_disk {
@@ -230,7 +230,7 @@ resource "azurerm_linux_virtual_machine" "web" {
     connection {
       type        = "ssh"
       user        = var.admin_username
-      private_key = file(var.ssh_private_key_path)
+      private_key = file(pathexpand(var.ssh_private_key_path))
       host        = azurerm_public_ip.web.ip_address
     }
   }
@@ -243,7 +243,7 @@ resource "azurerm_linux_virtual_machine" "web" {
     connection {
       type        = "ssh"
       user        = var.admin_username
-      private_key = file(var.ssh_private_key_path)
+      private_key = file(pathexpand(var.ssh_private_key_path))
       host        = azurerm_public_ip.web.ip_address
     }
   }
@@ -258,7 +258,7 @@ resource "azurerm_linux_virtual_machine" "web" {
     connection {
       type        = "ssh"
       user        = var.admin_username
-      private_key = file(var.ssh_private_key_path)
+      private_key = file(pathexpand(var.ssh_private_key_path))
       host        = azurerm_public_ip.web.ip_address
     }
   }

@@ -1,12 +1,13 @@
 # --- Azure ---
 azure_subscription_id = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
-location              = "France Central"
+# Norway East a souvent plus de disponibilité que Sweden Central
+location              = "Norway East"
 
 # --- Project ---
 project_name = "cloudprojet"
 
 # --- VM ---
-vm_size              = "Standard_B1s"
+vm_size              = "Standard_B1ms"
 admin_username       = "azureuser"
 ssh_public_key_path  = "~/.ssh/id_rsa.pub"
 ssh_private_key_path = "~/.ssh/id_rsa"

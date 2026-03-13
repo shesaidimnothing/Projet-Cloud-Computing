@@ -5,9 +5,9 @@ variable "azure_subscription_id" {
 }
 
 variable "location" {
-  description = "Azure region for all resources"
+  description = "Azure region for all resources (Norway East, Sweden Central often work with student subscriptions)"
   type        = string
-  default     = "France Central"
+  default     = "Norway East"
 }
 
 # --- Project ---
@@ -19,9 +19,9 @@ variable "project_name" {
 
 # --- VM ---
 variable "vm_size" {
-  description = "Azure VM size"
+  description = "Azure VM size. Si erreur SkuNotAvailable: essayer Standard_B1ms, Standard_A1_v2, ou changer de région."
   type        = string
-  default     = "Standard_B1s"
+  default     = "Standard_B1ms"
 }
 
 variable "admin_username" {
